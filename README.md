@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/aws-ai-chatbot-architecture.png" alt="AWS AI Portfolio Chatbot Architecture" width="100%">
+  <img src="./images/images/mainmeduim.png" alt="AWS AI Portfolio Chatbot Architecture" width="100%">
 </p>
 
 # 🚀 AWS AI Portfolio Chatbot
@@ -35,6 +35,13 @@ The chatbot includes:
 - Monitoring and Logging with CloudWatch
 
 This project was built as part of my cloud engineering learning journey and serves as a real-world portfolio application.
+
+## 📸 
+
+
+
+![](./images/images/aws-ai-chatbot-architecture.png)
+
 
 ## 🏗 Architecture
 
