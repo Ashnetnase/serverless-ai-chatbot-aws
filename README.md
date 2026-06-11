@@ -1,99 +1,92 @@
-# Serverless AI Chatbot on AWS
+<p align="center">
+  <img src="./images/aws-ai-chatbot-architecture.png" alt="AWS AI Portfolio Chatbot Architecture" width="100%">
+</p>
 
-A public-safe example of a serverless AI chatbot backend built with Terraform, AWS Lambda, API Gateway, DynamoDB, Amazon S3, Secrets Manager, CloudWatch and OpenAI.
+# 🚀 AWS AI Portfolio Chatbot
 
-## Overview
+A serverless AI-powered portfolio chatbot built using AWS, Terraform, OpenAI, and modern cloud engineering practices.
 
-This project demonstrates how to build a serverless chatbot backend for a professional portfolio website.
+### Built With
 
-The chatbot uses:
+Terraform • AWS Lambda • API Gateway • DynamoDB • S3 • Secrets Manager • CloudWatch • OpenAI
 
-- API Gateway to expose a public HTTP endpoint
-- Lambda to process chat requests
-- OpenAI to generate responses
-- S3 to store public portfolio knowledge
-- DynamoDB to store chat history and rate-limit counters
-- Secrets Manager to store the OpenAI API key securely
-- CloudWatch for logs
-- Terraform for Infrastructure as Code
+🌐 Live Demo: https://ashleyschippers.dev
 
-## Architecture
+📝 Article: https://medium.com/@ashley.schippersas/building-my-aws-ai-portfolio-chatbot-with-terraform-lambda-and-openai-95730daec82c
 
-```text
-Portfolio Website
-      ↓
-API Gateway
-      ↓
-AWS Lambda
-      ↓
-OpenAI API
+![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4)
+![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-FF9900)
+![DynamoDB](https://img.shields.io/badge/AWS-DynamoDB-4053D6)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-10A37F)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
 
-Additional services:
+## 🎯 Project Goal
 
-Lambda → DynamoDB       Chat history, sessions and rate limits
-Lambda → S3             Portfolio knowledge JSON
-Lambda → Secrets Manager OpenAI API key
-Lambda → CloudWatch     Logs and troubleshooting
-Features
-Infrastructure as Code with Terraform
-Serverless backend
-OpenAI integration
-Portfolio knowledge stored in S3
-Chat history in DynamoDB
-Session tracking
-Per-session message limits
-Per-minute and per-day rate limiting
-DynamoDB TTL cleanup
-CloudWatch logging
-Secrets stored in AWS Secrets Manager
-Estimated Cost
+The goal of this project was to build a production-style serverless AI chatbot capable of answering questions about a portfolio website while demonstrating practical cloud engineering skills.
 
-For low-traffic portfolio use, this architecture is designed to be low cost.
+The chatbot includes:
 
-Typical cost drivers:
+- Infrastructure as Code with Terraform
+- AWS Serverless Architecture
+- OpenAI Integration
+- Secure Secrets Management
+- Rate Limiting and Cost Controls
+- Portfolio Knowledge Stored in S3
+- Monitoring and Logging with CloudWatch
 
-Secrets Manager has a small monthly cost per secret
-OpenAI usage depends on request volume
-Lambda, API Gateway, S3 and DynamoDB are usually low cost at small scale
-Security Notes
+This project was built as part of my cloud engineering learning journey and serves as a real-world portfolio application.
 
-Do not commit:
+## 🏗 Architecture
 
-terraform.tfvars
-Terraform state files
-API keys
-AWS credentials
-Secrets
-Private infrastructure details
+The chatbot follows a fully serverless architecture:
 
-Use terraform.tfvars.example as a safe template.
+Portfolio Website → API Gateway → AWS Lambda → OpenAI API
 
-Setup
-Copy the example variable file:
-cp terraform.tfvars.example terraform.tfvars
-Add your own values:
-aws_region            = "ap-southeast-2"
-knowledge_bucket_name = "your-unique-chatbot-knowledge-bucket"
-allowed_origins       = ["https://your-website.example"]
-openai_api_key        = "sk-your-openai-api-key"
-Deploy:
-terraform init
-terraform plan
-terraform apply
-Test:
-curl -X POST "https://your-api-url/chat" \
-  -H "Content-Type: application/json" \
-  -d '{"sessionId":"demo","message":"Hello"}'
-Live Demo
+Supporting services:
 
-This public template is based on a live portfolio chatbot project.
+- DynamoDB (chat history & rate limiting)
+- S3 (portfolio knowledge base)
+- Secrets Manager (API key storage)
+- CloudWatch (logging & monitoring)
 
-Blog Article: https://medium.com/@ashley.schippersas/building-my-aws-ai-portfolio-chatbot-with-terraform-lambda-and-openai-95730daec82c
+## 📚 Lessons Learned
 
-Read the project write-up:
+During this project I gained hands-on experience with:
 
-Building My AWS AI Portfolio Chatbot with Terraform, Lambda and OpenAI
+- Terraform workflows
+- IAM permissions
+- Lambda troubleshooting
+- API Gateway integrations
+- DynamoDB design
+- Secrets Manager
+- CloudWatch debugging
+- Rate limiting strategies
+- Production deployment workflows
 
-License
+The biggest lesson was learning how to troubleshoot cloud systems by reading logs, identifying root causes, and resolving issues step by step.
 
-MIT
+## 💰 Cost Optimisation
+
+This architecture was designed to be affordable for personal portfolio use.
+
+Features include:
+
+- Serverless infrastructure
+- DynamoDB TTL cleanup
+- Session limits
+- Per-minute rate limits
+- Per-day rate limits
+- Secure API key storage
+
+Typical monthly AWS costs are minimal for low-traffic personal projects, with OpenAI usage being the primary variable cost.
+
+## 🌐 Connect
+
+Portfolio: https://ashleyschippers.dev
+
+LinkedIn: https://www.linkedin.com/in/ashley-schippers-90a37084/
+
+Medium: https://medium.com/@ashley.schippersas
+
+GitHub: https://github.com/Ashnetnase
+
