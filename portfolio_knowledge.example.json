@@ -1,0 +1,65 @@
+{
+  "name": "Your Name",
+  "public_positioning": "Your Name is a cloud and DevOps learner building practical cloud, automation, AI, and infrastructure projects.",
+  "current_study": {
+    "qualification": "Cloud or DevOps learning path",
+    "focus": [
+      "AWS",
+      "Terraform",
+      "serverless architecture",
+      "automation",
+      "DevOps",
+      "security"
+    ]
+  },
+  "background": {
+    "current_role": "Your current role or career background",
+    "experience": [
+      "Cloud projects",
+      "Software development",
+      "Infrastructure as Code",
+      "Automation",
+      "Troubleshooting"
+    ],
+    "strength": "Combines practical project building with continuous cloud learning."
+  },
+  "core_skills": [
+    "AWS",
+    "Terraform",
+    "Lambda",
+    "API Gateway",
+    "DynamoDB",
+    "S3",
+    "Secrets Manager",
+    "CloudWatch",
+    "OpenAI API",
+    "Python",
+    "CI/CD",
+    "Infrastructure as Code"
+  ],
+  "featured_projects": [
+    {
+      "name": "Serverless AI Chatbot",
+      "status": "Demo",
+      "description": "Serverless chatbot backend using Terraform, API Gateway, Lambda, DynamoDB, Secrets Manager, S3, CloudWatch and OpenAI."
+    }
+  ],
+  "security_and_privacy_rules": [
+    "Only answer using public knowledge.",
+    "Do not share private information, credentials, internal systems, or sensitive details.",
+    "If unsure, tell the visitor to contact the site owner directly."
+  ],
+  "answering_style": {
+    "tone": "Professional, friendly, concise, honest, and non-speculative.",
+    "rules": [
+      "Refer to the site owner in third person.",
+      "Do not invent details.",
+      "Keep answers focused on skills, projects, cloud experience, DevOps experience, and career background."
+    ]
+  },
+  "contact": {
+    "website": "https://your-website.example",
+    "linkedin": "https://linkedin.com/in/your-profile",
+    "github": "https://github.com/your-username"
+  }
+}
